@@ -1,0 +1,9 @@
+/languages/jetbrains.maprules/source_gen/
+languages/jetbrains.maprules/classes_gen/
+languages/jetbrains.maprules/generator/classes_gen/
+languages/jetbrains.maprules/generator/source_gen.caches/
+languages/jetbrains.maprules/generator/source_gen/
+languages/jetbrains.maprules/source_gen.caches/
+solutions/maprules.sandbox/source_gen.caches/
+solutions/maprules.sandbox/source_gen/
+.mps/workspace.xml
