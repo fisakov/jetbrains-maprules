@@ -5,6 +5,10 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="tests" />
+    <facet type="java" />
+  </facets>
   <accessoryModels />
   <generators>
     <generator name="" generatorUID="jetbrains.maprules#230657746796697429" uuid="6bf46374-dc4a-4e28-aa99-a6369af7a790">
@@ -31,9 +35,6 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <stubModelEntries>
-    <stubModelEntry path="/home/fyodor/Workstuff/GITHUB/FISAKOV/maprules/core/model/target/model-1.0-SNAPSHOT.jar" />
-  </stubModelEntries>
   <sourcePath />
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
