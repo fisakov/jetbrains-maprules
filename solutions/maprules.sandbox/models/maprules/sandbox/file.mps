@@ -6,7 +6,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="f59x" modelUID="r:6abb5eb8-ef64-4250-951a-c15c8340d1c1(jetbrains.maprules.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <root type="f59x.Entity" typeId="f59x.230657746796716005" id="230657746797133016" nodeInfo="ng">
+  <root type="f59x.ModelEntity" typeId="f59x.230657746796716005" id="230657746797133016" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="File" />
     <node role="link" roleId="f59x.230657746796774026" type="f59x.ChildLink" typeId="f59x.499184251018435463" id="499184251018469181" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="children" />

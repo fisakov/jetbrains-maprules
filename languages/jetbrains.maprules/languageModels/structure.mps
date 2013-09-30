@@ -8,9 +8,9 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="f59x" modelUID="r:6abb5eb8-ef64-4250-951a-c15c8340d1c1(jetbrains.maprules.structure)" version="-1" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="230657746796716005" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Entity" />
+    <property name="name" nameId="tpck.1169194664001" value="ModelEntity" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="499184251018711336" resolveInfo="Entity" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="230657746796774028" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="property" />
@@ -56,7 +56,17 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <property name="role" nameId="tpce.1071599776563" value="target" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="230657746796716005" resolveInfo="Entity" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="230657746796716005" resolveInfo="ModelEntity" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="499184251018711336" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Entity" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="499184251019592406" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="fqName" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
 </model>
