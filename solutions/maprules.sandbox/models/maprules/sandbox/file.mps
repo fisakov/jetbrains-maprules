@@ -8,6 +8,10 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <root type="f59x.Entity" typeId="f59x.230657746796716005" id="230657746797133016" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="File" />
+    <node role="link" roleId="f59x.230657746796774026" type="f59x.ChildLink" typeId="f59x.499184251018435463" id="499184251018469181" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="children" />
+      <link role="target" roleId="f59x.230657746796763346" targetNodeId="230657746797133016" resolveInfo="File" />
+    </node>
     <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="499184251018371102" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="name" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.StringType" typeId="tpee.1225271177708" id="499184251018371481" nodeInfo="in" />
@@ -15,10 +19,6 @@
     <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="499184251018371264" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isDir" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="499184251018371484" nodeInfo="in" />
-    </node>
-    <node role="link" roleId="f59x.230657746796774026" type="f59x.Link" typeId="f59x.230657746796763345" id="230657746797133022" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="children" />
-      <link role="target" roleId="f59x.230657746796763346" targetNodeId="230657746797133016" resolveInfo="File" />
     </node>
   </root>
 </model>
