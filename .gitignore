@@ -7,3 +7,4 @@ languages/jetbrains.maprules/source_gen.caches/
 solutions/maprules.sandbox/source_gen.caches/
 solutions/maprules.sandbox/source_gen/
 .mps/workspace.xml
+solutions/maprules.sandbox/classes_gen
