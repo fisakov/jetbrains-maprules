@@ -2,9 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/jetbrains.maprules/jetbrains.maprules.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/jetbrains.maprules.lib/jetbrains.maprules.lib.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/maprules.sandbox/maprules.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/mps/languages/jetbrains.maprules/jetbrains.maprules.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/mps/solutions/jetbrains.maprules.core/jetbrains.maprules.core.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/mps/solutions/maprules.sandbox/maprules.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
