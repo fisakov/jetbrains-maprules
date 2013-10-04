@@ -21,5 +21,18 @@
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="499184251018371484" nodeInfo="in" />
     </node>
   </root>
+  <root type="f59x.MapRuleTable" typeId="f59x.4232689917231607028" id="4232689917232183195" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Test" />
+    <link role="sourceEntity" roleId="f59x.4232689917232183441" targetNodeId="230657746797133016" resolveInfo="File" />
+    <link role="targetEntity" roleId="f59x.4232689917232183445" targetNodeId="230657746797133016" resolveInfo="File" />
+    <node role="propertyRule" roleId="f59x.4232689917232102239" type="f59x.PropertyMapRule" typeId="f59x.4232689917231635107" id="4232689917232183253" nodeInfo="ng">
+      <link role="targetProperty" roleId="f59x.4232689917231635110" targetNodeId="499184251018371102" resolveInfo="name" />
+      <link role="sourceProperty" roleId="f59x.4232689917231635108" targetNodeId="499184251018371102" resolveInfo="name" />
+    </node>
+    <node role="linkRule" roleId="f59x.4232689917232102335" type="f59x.LinkMapRule" typeId="f59x.4232689917232102375" id="4232689917232183255" nodeInfo="ng">
+      <link role="sourceLink" roleId="f59x.4232689917232102797" targetNodeId="499184251018469181" resolveInfo="children" />
+      <link role="targetLink" roleId="f59x.4232689917232102799" targetNodeId="499184251018469181" resolveInfo="children" />
+    </node>
+  </root>
 </model>
 

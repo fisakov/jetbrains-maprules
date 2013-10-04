@@ -2,15 +2,19 @@
 <solution name="jetbrains.maprules.core" uuid="9da8db19-d9c3-4200-886a-71519ad8cfb0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot path="${maprules_home}/core/model/target/classes" type="java_classes" />
+    <modelRoot path="${maprules_home}/core/mapper/target/classes" type="java_classes" />
   </models>
   <facets>
     <facet type="java" />
     <facet type="tests" />
     <facet type="java" />
     <facet type="tests" />
+    <facet type="tests" />
+    <facet type="java" />
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${maprules_home}/core/model/target/classes" />
+    <stubModelEntry path="${maprules_home}/core/mapper/target/classes" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
