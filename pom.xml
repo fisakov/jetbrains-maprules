@@ -14,7 +14,6 @@
     <module>core/model</module>
     <module>core/mapper</module>
 
-    <module>mps</module>
   </modules>
 
   <properties>
