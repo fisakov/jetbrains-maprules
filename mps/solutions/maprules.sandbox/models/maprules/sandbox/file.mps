@@ -22,7 +22,7 @@
     </node>
   </root>
   <root type="f59x.MapRuleTable" typeId="f59x.4232689917231607028" id="4232689917232183195" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Test" />
+    <property name="name" nameId="tpck.1169194664001" value="TrivialMapper" />
     <link role="sourceEntity" roleId="f59x.4232689917232183441" targetNodeId="230657746797133016" resolveInfo="File" />
     <link role="targetEntity" roleId="f59x.4232689917232183445" targetNodeId="230657746797133016" resolveInfo="File" />
     <node role="propertyRule" roleId="f59x.4232689917232102239" type="f59x.PropertyMapRule" typeId="f59x.4232689917231635107" id="4232689917232183253" nodeInfo="ng">
@@ -32,6 +32,18 @@
     <node role="linkRule" roleId="f59x.4232689917232102335" type="f59x.LinkMapRule" typeId="f59x.4232689917232102375" id="4232689917232183255" nodeInfo="ng">
       <link role="sourceLink" roleId="f59x.4232689917232102797" targetNodeId="499184251018469181" resolveInfo="children" />
       <link role="targetLink" roleId="f59x.4232689917232102799" targetNodeId="499184251018469181" resolveInfo="children" />
+      <link role="usingTable" roleId="f59x.2035998209710448958" targetNodeId="4232689917232183195" resolveInfo="TrivialMapper" />
+    </node>
+    <node role="factory" roleId="f59x.2035998209708634212" type="f59x.EntityFactory" typeId="f59x.2035998209708583116" id="2035998209710426674" nodeInfo="ng">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2035998209710426675" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2035998209710439637" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2035998209710439635" nodeInfo="nn">
+            <node role="creator" roleId="tpee.1145553007750" type="f59x.EntityCreator" typeId="f59x.2035998209708834700" id="2035998209710439936" nodeInfo="ng">
+              <link role="entity" roleId="f59x.2035998209708882861" targetNodeId="230657746797133016" resolveInfo="File" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
