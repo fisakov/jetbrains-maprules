@@ -23,16 +23,22 @@
   </root>
   <root type="f59x.MapRuleTable" typeId="f59x.4232689917231607028" id="4232689917232183195" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TrivialMapper" />
-    <link role="sourceEntity" roleId="f59x.4232689917232183441" targetNodeId="230657746797133016" resolveInfo="File" />
-    <link role="targetEntity" roleId="f59x.4232689917232183445" targetNodeId="230657746797133016" resolveInfo="File" />
     <node role="propertyRule" roleId="f59x.4232689917232102239" type="f59x.PropertyMapRule" typeId="f59x.4232689917231635107" id="4232689917232183253" nodeInfo="ng">
-      <link role="targetProperty" roleId="f59x.4232689917231635110" targetNodeId="499184251018371102" resolveInfo="name" />
-      <link role="sourceProperty" roleId="f59x.4232689917231635108" targetNodeId="499184251018371102" resolveInfo="name" />
+      <node role="source" roleId="f59x.2696099114863489040" type="f59x.ModelPropertyHandle" typeId="f59x.2696099114863488724" id="2696099114863620876" nodeInfo="ng">
+        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="499184251018371102" resolveInfo="name" />
+      </node>
+      <node role="target" roleId="f59x.2696099114863489402" type="f59x.ModelPropertyHandle" typeId="f59x.2696099114863488724" id="2696099114863620878" nodeInfo="ng">
+        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="499184251018371102" resolveInfo="name" />
+      </node>
     </node>
     <node role="linkRule" roleId="f59x.4232689917232102335" type="f59x.LinkMapRule" typeId="f59x.4232689917232102375" id="4232689917232183255" nodeInfo="ng">
-      <link role="sourceLink" roleId="f59x.4232689917232102797" targetNodeId="499184251018469181" resolveInfo="children" />
-      <link role="targetLink" roleId="f59x.4232689917232102799" targetNodeId="499184251018469181" resolveInfo="children" />
       <link role="usingTable" roleId="f59x.2035998209710448958" targetNodeId="4232689917232183195" resolveInfo="TrivialMapper" />
+      <node role="source" roleId="f59x.2696099114863621518" type="f59x.ModelLinkHandle" typeId="f59x.2696099114863621077" id="2696099114863768264" nodeInfo="ng">
+        <link role="link" roleId="f59x.2696099114863621078" targetNodeId="499184251018469181" resolveInfo="children" />
+      </node>
+      <node role="target" roleId="f59x.2696099114863621523" type="f59x.ModelLinkHandle" typeId="f59x.2696099114863621077" id="2696099114863768266" nodeInfo="ng">
+        <link role="link" roleId="f59x.2696099114863621078" targetNodeId="499184251018469181" resolveInfo="children" />
+      </node>
     </node>
     <node role="factory" roleId="f59x.2035998209708634212" type="f59x.EntityFactory" typeId="f59x.2035998209708583116" id="2035998209710426674" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2035998209710426675" nodeInfo="sn">
@@ -44,6 +50,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="source" roleId="f59x.2696099114862907254" type="f59x.ModelEntityHandle" typeId="f59x.2696099114862473237" id="2696099114863620905" nodeInfo="ng">
+      <link role="entity" roleId="f59x.2696099114862473238" targetNodeId="230657746797133016" resolveInfo="File" />
+    </node>
+    <node role="target" roleId="f59x.2696099114862907305" type="f59x.ModelEntityHandle" typeId="f59x.2696099114862473237" id="2696099114863620913" nodeInfo="ng">
+      <link role="entity" roleId="f59x.2696099114862473238" targetNodeId="230657746797133016" resolveInfo="File" />
     </node>
   </root>
 </model>
