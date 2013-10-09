@@ -5,20 +5,22 @@ Requirements:
      - Ant
      - Ivy
 
-1. Initialize git submodules
+1. Initialize git submodules:
 
    git submodule init
    git submodule update
 
-2. Compile the required modules and install locally
+2. Compile the required modules and install locally:
 
    mvn clean install
 
-3. Setup workspace and resolve dependencies
+3. Setup workspace and resolve dependencies:
 
    ant workspace
 
-4. Launch MPS and open the project
+4. Launch MPS.
 
-5. Build the project with MPS
+5. Set the path variable "maprules_home" to point to the working dir.
+
+6. Open the project and do a rebuild.
 
