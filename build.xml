@@ -5,26 +5,26 @@
 
     <property file="build.properties" />
 
-    <condition property="plugins_home_not_set">
-        <equals arg1="undefined" arg2="${plugins_home}"/>
-    </condition>
-
-    <condition property="idea_home_not_set">
-        <equals arg1="undefined" arg2="${idea_home}"/>
-    </condition>
-
     <fail unless="plugins_home" message="Please set plugins_home"/>
     <fail unless="idea_home" message="Please set idea_home"/>
 
     <target name="workspace" depends="resolve, generate" description="setup workspace">
     </target>
 
-    <target name="generate" depends="resolve" description="generate sources">
-        <ant antfile="build.xml" dir="mps" inheritAll="true" target="generate"/>
+    <target name="package-plugin" depends="resolve,generate" description="package IDEA plugin">
+        <ant antfile="build.xml" dir="mps" inheritAll="true" target="build"/>
     </target>
 
-    <target name="package" depends="resolve" description="package maprules plugin">
-        <ant antfile="build.xml" dir="mps" inheritAll="true" target="build"/>
+    <target name="install-plugin" depends="package-plugin" description="install IDEA plugin">
+        <unzip dest="${plugins_home}">
+            <fileset dir="mps/build/artifacts/maprules/">
+                <include name="*.zip"/>
+            </fileset>
+        </unzip>
+    </target>
+
+    <target name="generate" depends="resolve" description="generate sources">
+        <ant antfile="build.xml" dir="mps" inheritAll="true" target="generate"/>
     </target>
 
     <target name="resolve" description="retrieve dependencies with ivy">
