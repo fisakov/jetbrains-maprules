@@ -1,0 +1,3 @@
+idea_home=/Applications/IntelliJ IDEA 12 CE.app/
+plugins_home=${user.home}/Library/Application Support/IdeaIC12/
+

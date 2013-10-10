@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/mps/languages/jetbrains.maprules/jetbrains.maprules.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/mps/solutions/jetbrains.maprules.core/jetbrains.maprules.core.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/mps/solutions/maprules.sandbox/maprules.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/maprules.build/maprules.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

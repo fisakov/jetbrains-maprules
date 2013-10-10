@@ -1,26 +1,45 @@
 Requirements: 
 
-     - MPS 3.0 (http://www.jetbrains.com/mps/download/)
-     - Maven 
-     - Ant
-     - Ivy
+    - MPS 3.0 (http://www.jetbrains.com/mps/download/)
+    - IDEA CE 12 (http://www.jetbrains.com/idea/download/)
+    - Ant
+    - Ivy
+    - Maven (for building dependencies)
+    - Maven Ant Tasks
 
-1. Initialize git submodules:
+0.  Copy build.properties.sample to build.properties and edit accordingly.
 
-   git submodule init
-   git submodule update
+1.  Initialize git submodules:
+
+        git submodule init
+        git submodule update
 
 2. Compile the required modules and install locally:
 
-   mvn clean install
+        ant install-core
 
-3. Setup workspace and resolve dependencies:
+    If Ant complains about missing taskdef, specify path to the
+    maven-ant-tasks.jar file with the -lib parameter.
 
-   ant workspace
+        ant install-core -lib path/to/maven-ant-tasks.jar
 
-4. Launch MPS.
+    Alternatively, launch Maven from the command line:
 
-5. Set the path variable "maprules_home" to point to the working dir.
+        mvn -f core/pom.xml  --projects \
+             jetbrains.jetpad:model,jetbrains.jetpad.mapper:mapper \
+             --also-make clean install
 
-6. Open the project and do a rebuild.
+3.  Resolve dependencies and generate sources:
+
+        ant workspace
+
+    If necessary, specify path to the ivy.jar file with the -lib parameter.
+
+        ant workspace -lib path/to/ivy.jar
+
+4.  Launch MPS.
+
+5.  Set the path variable "maprules_home" to point to the project's directory.
+
+6.  Open the maprules project and run a build.
 

@@ -3,3 +3,5 @@ source_gen/
 classes_gen/
 source_gen.caches/
 .mps/workspace.xml
+/mps/build/
+/build.properties

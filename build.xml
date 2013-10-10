@@ -1,10 +1,38 @@
-<project xmlns:ivy="antlib:org.apache.ivy.ant" name="maprules" default="workspace">
+<project 
+    xmlns:ivy="antlib:org.apache.ivy.ant" 
+    xmlns:artifact="antlib:org.apache.maven.artifact.ant"
+    name="maprules" default="workspace">
 
-    <target name="workspace" depends="resolve" description="setup workspace">
+    <property file="build.properties" />
+
+    <condition property="plugins_home_not_set">
+        <equals arg1="undefined" arg2="${plugins_home}"/>
+    </condition>
+
+    <condition property="idea_home_not_set">
+        <equals arg1="undefined" arg2="${idea_home}"/>
+    </condition>
+
+    <fail unless="plugins_home" message="Please set plugins_home"/>
+    <fail unless="idea_home" message="Please set idea_home"/>
+
+    <target name="workspace" depends="resolve, generate" description="setup workspace">
+    </target>
+
+    <target name="generate" depends="resolve" description="generate sources">
+        <ant antfile="build.xml" dir="mps" inheritAll="true" target="generate"/>
     </target>
 
     <target name="resolve" description="retrieve dependencies with ivy">
         <ivy:retrieve />
     </target>
 
+    <target name="install-core" description="make and install dependencies to the local maven repository">
+        <artifact:mvn pom="core/pom.xml" mavenHome="/usr/share/maven">
+            <arg value="--projects"/>
+            <arg value="jetbrains.jetpad:model,jetbrains.jetpad.mapper:mapper"/>
+            <arg value="--also-make"/>
+            <arg value="install"/>
+        </artifact:mvn>
+    </target>
 </project>
