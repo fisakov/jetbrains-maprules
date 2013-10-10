@@ -21,14 +21,16 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/maprules.zip" />
-    <mkdir dir="${build.tmp}/default/maprules.zip/maprules" />
-    <mkdir dir="${build.tmp}/default/maprules.zip/maprules/META-INF" />
-    <echoxml file="${build.tmp}/default/maprules.zip/maprules/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/jetbrains-maprules.zip" />
+    <mkdir dir="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules" />
+    <mkdir dir="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>maprules</id>
-        <name>maprules</name>
-        <version>1.0</version>
+        <id>jetbrains.maprules</id>
+        <name>MapRules</name>
+        <description>Modeling and transformation framework</description>
+        <version>0.1</version>
+        <vendor url="http://jetbrains.com">JetBrains</vendor>
         <depends>jetbrains.mps.core</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -36,8 +38,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/maprules.zip/maprules/languages" />
-    <mkdir dir="${build.tmp}/default/maprules.zip/maprules/languages/maprules" />
+    <mkdir dir="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages" />
+    <mkdir dir="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages/maprules" />
     <mkdir dir="${build.tmp}/default/jetbrains.maprules.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.maprules.jar/META-INF" />
     <echoxml file="${build.tmp}/default/jetbrains.maprules.jar/META-INF/module.xml">
@@ -59,12 +61,12 @@
         <sources jar="jetbrains.maprules-src.jar" descriptor="jetbrains.maprules.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/maprules.zip/maprules/languages/maprules/jetbrains.maprules.jar">
+    <jar destfile="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages/maprules/jetbrains.maprules.jar">
       <fileset dir="${build.tmp}/java/out/jetbrains.maprules" />
       <fileset dir="${basedir}/languages/jetbrains.maprules" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/jetbrains.maprules.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/maprules.zip/maprules/languages/maprules/jetbrains.maprules-generator.jar">
+    <jar destfile="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages/maprules/jetbrains.maprules-generator.jar">
       <fileset dir="${build.tmp}/java/out/jetbrains.maprules#230657746796697429" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.maprules-generator-template">
@@ -73,7 +75,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.maprules-languageModels">
       <fileset dir="${basedir}/languages/jetbrains.maprules/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/maprules.zip/maprules/languages/maprules/jetbrains.maprules-src.jar">
+    <jar destfile="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages/maprules/jetbrains.maprules-src.jar">
       <fileset dir="${basedir}/languages/jetbrains.maprules/generator/source_gen" includes="**/*.java" />
       <fileset dir="${basedir}/languages/jetbrains.maprules/source_gen" includes="**/*.java" />
       <zipfileset file="${basedir}/languages/jetbrains.maprules/jetbrains.maprules.mpl" prefix="module" />
@@ -90,17 +92,17 @@
         <sources jar="jetbrains.maprules.core-src.jar" descriptor="jetbrains.maprules.core.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/maprules.zip/maprules/languages/maprules/jetbrains.maprules.core.jar">
+    <jar destfile="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages/maprules/jetbrains.maprules.core.jar">
       <fileset dir="${basedir}/solutions/jetbrains.maprules.core" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/jetbrains.maprules.core.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/maprules.zip/maprules/languages/maprules/jetbrains.maprules.core-src.jar">
+    <jar destfile="${build.tmp}/default/jetbrains-maprules.zip/jetbrains-maprules/languages/maprules/jetbrains.maprules.core-src.jar">
       <zipfileset file="${basedir}/solutions/jetbrains.maprules.core/jetbrains.maprules.core.msd" prefix="module" />
     </jar>
-    <zip destfile="${build.layout}/maprules.zip">
-      <zipfileset file="${maprules_home}/lib/model-1.0-SNAPSHOT.jar" prefix="maprules/lib" />
-      <zipfileset file="${maprules_home}/lib/mapper-1.0-SNAPSHOT.jar" prefix="maprules/lib" />
-      <fileset dir="${build.tmp}/default/maprules.zip" />
+    <zip destfile="${build.layout}/jetbrains-maprules.zip">
+      <zipfileset file="${maprules_home}/lib/model-1.0-SNAPSHOT.jar" prefix="jetbrains-maprules/lib" />
+      <zipfileset file="${maprules_home}/lib/mapper-1.0-SNAPSHOT.jar" prefix="jetbrains-maprules/lib" />
+      <fileset dir="${build.tmp}/default/jetbrains-maprules.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">mpsPlugin.plugin.version=${mpsPlugin.plugin.version}${line.separator}mpsPlugin.date=${mpsPlugin.date}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>

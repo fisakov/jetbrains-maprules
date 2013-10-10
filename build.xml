@@ -23,6 +23,10 @@
         <ant antfile="build.xml" dir="mps" inheritAll="true" target="generate"/>
     </target>
 
+    <target name="package" depends="resolve" description="package maprules plugin">
+        <ant antfile="build.xml" dir="mps" inheritAll="true" target="build"/>
+    </target>
+
     <target name="resolve" description="retrieve dependencies with ivy">
         <ivy:retrieve />
     </target>
