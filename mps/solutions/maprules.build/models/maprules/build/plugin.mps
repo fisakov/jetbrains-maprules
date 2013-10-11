@@ -11,7 +11,7 @@
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="3" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="5649497135657128409" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="maprules" />
-    <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../mps" />
+    <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../" />
     <node role="aspects" roleId="3ior.3542413272732620719" type="3ior.BuildCustomWorkflow" typeId="3ior.4701820937132281259" id="3335188162945136076" nodeInfo="ng" />
     <node role="plugins" roleId="3ior.6647099934206700656" type="3ior.BuildJavaPlugin" typeId="3ior.6647099934206700647" id="5649497135657128410" nodeInfo="ng" />
     <node role="plugins" roleId="3ior.6647099934206700656" type="kdzh.BuildMPSPlugin" typeId="kdzh.868032131020265945" id="3335188162945031463" nodeInfo="ng" />
