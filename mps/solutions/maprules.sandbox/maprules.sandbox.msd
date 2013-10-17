@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">9da8db19-d9c3-4200-886a-71519ad8cfb0(jetbrains.maprules.core)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>0d6b2625-f169-4b99-8730-d34885fc2574(jetbrains.maprules)</usedLanguage>
