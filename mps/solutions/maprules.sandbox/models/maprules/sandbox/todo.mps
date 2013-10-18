@@ -57,11 +57,11 @@
   </root>
   <root type="f59x.ModelEntity" typeId="f59x.230657746796716005" id="2696099114865391091" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TodoListItem" />
-    <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="2696099114865391092" nodeInfo="ng">
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithInitializer" typeId="f59x.6504092689006345519" id="6504092689012882915" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="text" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.StringType" typeId="tpee.1225271177708" id="2696099114865391106" nodeInfo="in" />
     </node>
-    <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="2696099114865391109" nodeInfo="ng">
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithInitializer" typeId="f59x.6504092689006345519" id="6504092689012882889" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="completed" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="2696099114865391115" nodeInfo="in" />
     </node>
@@ -131,7 +131,7 @@
     </node>
     <node role="propertyRule" roleId="f59x.4232689917232102239" type="f59x.PropertyMapRule" typeId="f59x.4232689917231635107" id="2696099114867357219" nodeInfo="ng">
       <node role="source" roleId="f59x.2696099114863489040" type="f59x.ModelPropertyHandle" typeId="f59x.2696099114863488724" id="2696099114867357225" nodeInfo="ng">
-        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="2696099114865391109" resolveInfo="completed" />
+        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="6504092689012882889" resolveInfo="completed" />
       </node>
       <node role="target" roleId="f59x.2696099114863489402" type="f59x.ObjectPropertyHandle" typeId="f59x.2696099114867223876" id="2696099114867357227" nodeInfo="ng">
         <node role="setter" roleId="f59x.2696099114867224306" type="f59x.PropertySetter" typeId="f59x.2696099114867224235" id="2696099114867357229" nodeInfo="ng">
@@ -151,7 +151,7 @@
     </node>
     <node role="propertyRule" roleId="f59x.4232689917232102239" type="f59x.PropertyMapRule" typeId="f59x.4232689917231635107" id="7105558281079941317" nodeInfo="ng">
       <node role="source" roleId="f59x.2696099114863489040" type="f59x.ModelPropertyHandle" typeId="f59x.2696099114863488724" id="7105558281079941337" nodeInfo="ng">
-        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="2696099114865391092" resolveInfo="text" />
+        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="6504092689012882915" resolveInfo="text" />
       </node>
       <node role="target" roleId="f59x.2696099114863489402" type="f59x.ObjectPropertyHandle" typeId="f59x.2696099114867223876" id="7105558281079941339" nodeInfo="ng">
         <node role="setter" roleId="f59x.2696099114867224306" type="f59x.PropertySetter" typeId="f59x.2696099114867224235" id="7105558281079941343" nodeInfo="ng">

@@ -9,7 +9,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="f59x.EntityTemplate" typeId="f59x.4794147805456008013" id="4794147805465117422" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="SampleTemplate" />
+    <property name="name" nameId="tpck.1169194664001" value="SAMPLE_TEMPLATE" />
     <node role="classTemplate" roleId="f59x.4794147805456097966" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4794147805465117423" nodeInfo="ig">
       <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Template" />
@@ -23,17 +23,17 @@
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="885058143203764604" nodeInfo="nn" />
         <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="885058143203764785" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="value" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.TemplatePropertyMacro" typeId="f59x.885058143200990591" id="885058143203764871" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.EntityMacro" typeId="f59x.885058143200990591" id="885058143203764871" nodeInfo="ng">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
             <node role="expression" roleId="f59x.885058143200990830" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="885058143203765243" nodeInfo="nn">
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="885058143206190114" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="-postfix" />
-              </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="885058143207913995" nodeInfo="nn">
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="885058143207914027" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="prefix-" />
                 </node>
                 <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyValueExpression" typeId="f59x.885058143200754780" id="885058143203764894" nodeInfo="ng" />
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="885058143206190114" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="-postfix" />
               </node>
             </node>
           </node>
@@ -48,9 +48,77 @@
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4794147805473064366" nodeInfo="nn" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4794147805473064367" nodeInfo="sn" />
       </node>
-      <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="885058143208649370" nodeInfo="ngu" />
+      <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6504092689004799231" nodeInfo="ngu" />
+      <node role="member" roleId="tpee.5375687026011219971" type="f59x.PropertyTemplate" typeId="f59x.6504092689000760646" id="6504092689002263808" nodeInfo="ngu">
+        <property name="name" nameId="tpck.1169194664001" value="PROPERTY_TEMPLATE_1" />
+        <node role="initializer" roleId="f59x.6504092689000884925" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="6504092689003031245" nodeInfo="nn">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4794147805475006593" resolveInfo="property" />
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689003031380" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="valueString1" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.EntityPropertyMacro" typeId="f59x.885058143209552269" id="6504092689006318919" nodeInfo="ng">
+              <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
+              <node role="expression" roleId="f59x.885058143209552630" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689014156952" nodeInfo="nn">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689014157334" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="-postfix" />
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689006319518" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689014169743" nodeInfo="nn">
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689014169754" nodeInfo="nn">
+                      <property name="value" nameId="tpee.1070475926801" value="-" />
+                    </node>
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689016241293" nodeInfo="nn">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689016241352" nodeInfo="nn">
+                        <property name="value" nameId="tpee.1070475926801" value="prefix-" />
+                      </node>
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyValueExpression" typeId="f59x.885058143200754780" id="6504092689006319002" nodeInfo="ng" />
+                    </node>
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyNameExpression" typeId="f59x.885058143209485260" id="6504092689006319542" nodeInfo="ng" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6504092689013663719" nodeInfo="ngu" />
+      <node role="member" roleId="tpee.5375687026011219971" type="f59x.PropertyTemplate" typeId="f59x.6504092689000760646" id="6504092689013663974" nodeInfo="ngu">
+        <property name="name" nameId="tpck.1169194664001" value="PROPERTY_TEMPLATE_2" />
+        <node role="initializer" roleId="f59x.6504092689000884925" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="6504092689013664117" nodeInfo="nn">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6504092689013663150" resolveInfo="aux" />
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689013664165" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="valueString2" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.EntityPropertyMacro" typeId="f59x.885058143209552269" id="6504092689013678850" nodeInfo="ng">
+              <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
+              <node role="expression" roleId="f59x.885058143209552630" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013687345" nodeInfo="nn">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689013688083" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="-postfix" />
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013682127" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013679272" nodeInfo="nn">
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689016259667" nodeInfo="nn">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689016259728" nodeInfo="nn">
+                        <property name="value" nameId="tpee.1070475926801" value="prefix-" />
+                      </node>
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyValueExpression" typeId="f59x.885058143200754780" id="6504092689013678930" nodeInfo="ng" />
+                    </node>
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689013679297" nodeInfo="nn">
+                      <property name="value" nameId="tpee.1070475926801" value="-" />
+                    </node>
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyNameExpression" typeId="f59x.885058143209485260" id="6504092689013683739" nodeInfo="ng" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6504092689002263943" nodeInfo="ngu" />
       <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4794147805475006593" nodeInfo="igu">
         <property name="name" nameId="tpck.1169194664001" value="property" />
+        <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="885058143210594009" nodeInfo="ir">
+          <property name="name" nameId="tpck.1169194664001" value="foo" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="885058143210594407" nodeInfo="in" />
+        </node>
         <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="885058143208574178" nodeInfo="in">
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fex0.~Property" resolveInfo="Property" />
           <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="885058143208593274" nodeInfo="in">
@@ -70,7 +138,7 @@
             </node>
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.TemplatePropertyMacro" typeId="f59x.885058143200990591" id="885058143203562754" nodeInfo="ng">
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.EntityMacro" typeId="f59x.885058143200990591" id="885058143203562754" nodeInfo="ng">
           <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
           <node role="expression" roleId="f59x.885058143200990830" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="885058143203564553" nodeInfo="nn">
             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="885058143203564565" nodeInfo="nn">
@@ -78,6 +146,26 @@
             </node>
             <node role="leftExpression" roleId="tpee.1081773367580" type="f59x.PropertyValueExpression" typeId="f59x.885058143200754780" id="885058143203562777" nodeInfo="ng" />
           </node>
+        </node>
+      </node>
+      <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6504092689013662670" nodeInfo="ngu" />
+      <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6504092689013663150" nodeInfo="igu">
+        <property name="name" nameId="tpck.1169194664001" value="aux" />
+        <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6504092689013674604" nodeInfo="in">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="fex0.~Property" resolveInfo="Property" />
+          <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6504092689013674856" nodeInfo="in">
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~String" resolveInfo="String" />
+          </node>
+        </node>
+        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6504092689013663154" nodeInfo="nn" />
+        <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6504092689013663155" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6504092689013671407" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6504092689013671406" nodeInfo="nn" />
+          </node>
+        </node>
+        <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6504092689013664568" nodeInfo="ir">
+          <property name="name" nameId="tpck.1169194664001" value="param" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6504092689013664567" nodeInfo="in" />
         </node>
       </node>
       <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="885058143208650234" nodeInfo="ngu" />
@@ -91,7 +179,7 @@
         </node>
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4794147805465117424" nodeInfo="nn" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.TemplatePropertyMacro" typeId="f59x.885058143200990591" id="885058143206208231" nodeInfo="ng">
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.EntityMacro" typeId="f59x.885058143200990591" id="885058143206208231" nodeInfo="ng">
         <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
         <node role="expression" roleId="f59x.885058143200990830" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="885058143206208623" nodeInfo="nn">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="885058143206208635" nodeInfo="nn">
@@ -107,18 +195,16 @@
   </root>
   <root type="f59x.ModelEntity" typeId="f59x.230657746796716005" id="4794147805474046075" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="EntityA" />
-    <link role="template" roleId="f59x.4794147805473784003" targetNodeId="4794147805465117422" resolveInfo="SampleTemplate" />
-    <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="4794147805474046110" nodeInfo="ng">
+    <link role="template" roleId="f59x.4794147805473784003" targetNodeId="4794147805465117422" resolveInfo="SAMPLE_TEMPLATE" />
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithTemplate" typeId="f59x.6504092689012887212" id="6504092689014145713" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="flag" />
-      <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4794147805474046114" nodeInfo="in" />
-      <node role="initializer" roleId="f59x.4794147805474401711" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4794147805476812254" nodeInfo="nn">
-        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4794147805475006593" resolveInfo="property" />
-      </node>
+      <link role="propertyTemplate" roleId="f59x.6504092689012887526" targetNodeId="6504092689002263808" resolveInfo="PROPERTY_TEMPLATE_1" />
+      <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="6504092689014145738" nodeInfo="in" />
     </node>
-    <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="885058143208617689" nodeInfo="ng">
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithInitializer" typeId="f59x.6504092689006345519" id="6504092689012882921" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="str" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.StringType" typeId="tpee.1225271177708" id="885058143208617775" nodeInfo="in" />
-      <node role="initializer" roleId="f59x.4794147805474401711" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="885058143208617780" nodeInfo="nn">
+      <node role="initializer" roleId="f59x.6504092689006345520" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="885058143208617780" nodeInfo="nn">
         <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="885058143208618068" nodeInfo="nn">
           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fex0.~ValueProperty%d&lt;init&gt;()" resolveInfo="ValueProperty" />
           <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.StringType" typeId="tpee.1225271177708" id="885058143208618153" nodeInfo="in" />
@@ -128,7 +214,17 @@
   </root>
   <root type="f59x.ModelEntity" typeId="f59x.230657746796716005" id="885058143207931129" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="EntityB" />
-    <link role="template" roleId="f59x.4794147805473784003" targetNodeId="4794147805465117422" resolveInfo="SampleTemplate" />
+    <link role="template" roleId="f59x.4794147805473784003" targetNodeId="4794147805465117422" resolveInfo="SAMPLE_TEMPLATE" />
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithTemplate" typeId="f59x.6504092689012887212" id="6504092689013387537" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="propertyName1" />
+      <link role="propertyTemplate" roleId="f59x.6504092689012887526" targetNodeId="6504092689002263808" resolveInfo="PROPERTY_TEMPLATE_1" />
+      <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="6504092689013667623" nodeInfo="in" />
+    </node>
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithTemplate" typeId="f59x.6504092689012887212" id="6504092689013668317" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="propertyName2" />
+      <link role="propertyTemplate" roleId="f59x.6504092689012887526" targetNodeId="6504092689013663974" resolveInfo="PROPERTY_TEMPLATE_2" />
+      <node role="datatype" roleId="f59x.499184251018332237" type="tpee.StringType" typeId="tpee.1225271177708" id="6504092689013668327" nodeInfo="in" />
+    </node>
   </root>
 </model>
 

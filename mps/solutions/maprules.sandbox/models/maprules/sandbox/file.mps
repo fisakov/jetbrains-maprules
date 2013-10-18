@@ -12,11 +12,11 @@
       <property name="name" nameId="tpck.1169194664001" value="children" />
       <link role="target" roleId="f59x.2696099114865980490" targetNodeId="230657746797133016" resolveInfo="File" />
     </node>
-    <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="499184251018371102" nodeInfo="ng">
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithInitializer" typeId="f59x.6504092689006345519" id="6504092689012882883" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="name" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.StringType" typeId="tpee.1225271177708" id="499184251018371481" nodeInfo="in" />
     </node>
-    <node role="property" roleId="f59x.230657746796774028" type="f59x.Property" typeId="f59x.230657746796763342" id="499184251018371264" nodeInfo="ng">
+    <node role="property" roleId="f59x.230657746796774028" type="f59x.PropertyWithInitializer" typeId="f59x.6504092689006345519" id="6504092689012882939" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="isDir" />
       <node role="datatype" roleId="f59x.499184251018332237" type="tpee.BooleanType" typeId="tpee.1070534644030" id="499184251018371484" nodeInfo="in" />
     </node>
@@ -25,10 +25,10 @@
     <property name="name" nameId="tpck.1169194664001" value="TrivialMapper" />
     <node role="propertyRule" roleId="f59x.4232689917232102239" type="f59x.PropertyMapRule" typeId="f59x.4232689917231635107" id="4232689917232183253" nodeInfo="ng">
       <node role="source" roleId="f59x.2696099114863489040" type="f59x.ModelPropertyHandle" typeId="f59x.2696099114863488724" id="2696099114863620876" nodeInfo="ng">
-        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="499184251018371102" resolveInfo="name" />
+        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="6504092689012882883" resolveInfo="name" />
       </node>
       <node role="target" roleId="f59x.2696099114863489402" type="f59x.ModelPropertyHandle" typeId="f59x.2696099114863488724" id="2696099114863620878" nodeInfo="ng">
-        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="499184251018371102" resolveInfo="name" />
+        <link role="property" roleId="f59x.2696099114863488770" targetNodeId="6504092689012882883" resolveInfo="name" />
       </node>
     </node>
     <node role="linkRule" roleId="f59x.4232689917232102335" type="f59x.LinkMapRule" typeId="f59x.4232689917232102375" id="4232689917232183255" nodeInfo="ng">
