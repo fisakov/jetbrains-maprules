@@ -4,6 +4,7 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="0d6b2625-f169-4b99-8730-d34885fc2574(jetbrains.maprules)" />
   <import index="fex0" modelUID="f:java_stub#9da8db19-d9c3-4200-886a-71519ad8cfb0#jetbrains.jetpad.model.property(jetbrains.maprules.core/jetbrains.jetpad.model.property@java_stub)" version="-1" />
+  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="f59x" modelUID="r:6abb5eb8-ef64-4250-951a-c15c8340d1c1(jetbrains.maprules.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -90,22 +91,21 @@
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f59x.EntityPropertyMacro" typeId="f59x.885058143209552269" id="6504092689013678850" nodeInfo="ng">
               <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
               <node role="expression" roleId="f59x.885058143209552630" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013687345" nodeInfo="nn">
-                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689013688083" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="-postfix" />
-                </node>
-                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013682127" nodeInfo="nn">
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013679272" nodeInfo="nn">
-                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689016259667" nodeInfo="nn">
-                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689016259728" nodeInfo="nn">
-                        <property name="value" nameId="tpee.1070475926801" value="prefix-" />
-                      </node>
-                      <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyValueExpression" typeId="f59x.885058143200754780" id="6504092689013678930" nodeInfo="ng" />
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689013679272" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6504092689016259667" nodeInfo="nn">
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689016259728" nodeInfo="nn">
+                      <property name="value" nameId="tpee.1070475926801" value="prefix-" />
                     </node>
-                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689013679297" nodeInfo="nn">
-                      <property name="value" nameId="tpee.1070475926801" value="-" />
-                    </node>
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyValueExpression" typeId="f59x.885058143200754780" id="6504092689013678930" nodeInfo="ng" />
                   </node>
-                  <node role="rightExpression" roleId="tpee.1081773367579" type="f59x.PropertyNameExpression" typeId="f59x.885058143209485260" id="6504092689013683739" nodeInfo="ng" />
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6504092689013679297" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="-" />
+                  </node>
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7344804300432909522" nodeInfo="nn">
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e2lb.~String" resolveInfo="String" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dvalueOf(java%dlang%dObject)%cjava%dlang%dString" resolveInfo="valueOf" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="f59x.PropertyNameExpression" typeId="f59x.885058143209485260" id="7344804300432910982" nodeInfo="ng" />
                 </node>
               </node>
             </node>

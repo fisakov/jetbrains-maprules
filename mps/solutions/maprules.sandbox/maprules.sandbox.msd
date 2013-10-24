@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="maprules.sandbox" uuid="552a6d33-de10-4e59-9906-216d44ae44ca" compileInMPS="true">
+<solution name="maprules.sandbox" uuid="552a6d33-de10-4e59-9906-216d44ae44ca" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
